@@ -26,7 +26,7 @@ module.exports = {
         .addStringOption(option =>
             option.setName("kuvaus")
             .setRequired(false)
-            .setDescription("Vapaa kuvaus siitä miten meni, voi jättää tyhjäksi")),
+            .setDescription("Vapaa kuvaus siitä miten meni")),
 	async execute(interaction) {
         const nimi = interaction.user.username;
         const arvio = interaction.options._hoistedOptions[0]?.value;
