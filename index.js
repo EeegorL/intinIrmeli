@@ -33,7 +33,7 @@ client.on(Events.InteractionCreate, async interaction => {
 		await command.execute(interaction);
 	} catch (error) {
 		console.error(error);
-		await interaction.reply({ content: "Virhe, kerroppa Egor-kullalle!", ephemeral: true });
+		await interaction.reply({ content: "Virhe, kerroppa Egor-kullalle!\n-> ***"+error.message+"***", ephemeral: true });
 	}
 });
 
