@@ -7,7 +7,7 @@ Chart.register(...registerables);
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName("tulokset")
-		.setDescription("Palauttaa henkilökohtaiset tulokset kuukauden ajalta")
+		.setDescription("Palauttaa henkilökohtaiset tulokset")
 		.addUserOption(option =>
 			option.setName("nimi")
 				.setRequired(true)
