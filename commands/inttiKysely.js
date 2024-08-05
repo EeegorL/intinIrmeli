@@ -42,6 +42,6 @@ module.exports = {
         };
     
         writeToCSV(data);
-        interaction.reply(`Kirjattu!\n${arvio}/10${kuvaus === null ? "" : `: ${kuvaus}`}`);
+        interaction.reply(`${arvio}/10${kuvaus === null ? "" : `: ${kuvaus}`}`);
 	}
 };
